@@ -5,11 +5,12 @@ window.addEventListener("click", ({ target }) => {
     case "plus":
       {
         count += 1;
+        minusButton("add");
       }
       break;
     case "minus":
       {
-        count -= 1;
+        count === 0 ? minusButton("remove") : (count -= 1);
       }
       break;
     case "restart":
@@ -38,4 +39,11 @@ function changeColors() {
     document.body.style.backgroundColor = "#22b2da";
     document.body.style.color = "#ffffff";
   }
+}
+
+function minusButton(action) {
+  const minus = document.querySelector(".minus");
+  action === "remove"
+    ? (minus.style.visibility = "hidden")
+    : (minus.style.visibility = "visible");
 }
