@@ -6,6 +6,7 @@ body {
   font-family: "Roboto", sans-serif;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  transition: all ease-in-out 0.3s;
 }
 
 button {
@@ -24,7 +25,7 @@ button:hover {
 
 .restart-button {
   border-radius: 13px;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 1.125rem;
   cursor: pointer;
 }
