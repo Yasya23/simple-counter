@@ -1,17 +1,25 @@
 body {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #22b2da;
   color: #ffffff;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
 button {
   border: none;
   background-color: rgba(255, 255, 255, 0.575);
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -31,11 +39,15 @@ button:hover {
 }
 
 .restart-button:hover {
+  -webkit-box-shadow: 0 5px rgb(159, 159, 159);
   box-shadow: 0 5px rgb(159, 159, 159);
 }
 
 .restart-button:active {
+  -webkit-box-shadow: 0 3px #666;
   box-shadow: 0 3px #666;
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
   transform: translateY(2px);
 }
 
@@ -44,6 +56,8 @@ button:hover {
   top: 50%;
   left: 50%;
   width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -65,6 +79,8 @@ button:hover {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 2.5rem;
 }
@@ -88,9 +104,18 @@ button:hover {
   }
 
   .counter-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 50px;
   }
