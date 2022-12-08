@@ -111,7 +111,36 @@ button:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
+  }
+}
+
+@media (max-height: 650px) and (max-width: 500px) {
+  .counter-wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+  }
+
+  .number {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100%;
+  }
+
+  .minus {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .plus {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
   }
 }
 
