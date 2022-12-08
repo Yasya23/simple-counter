@@ -1,0 +1,102 @@
+body {
+  box-sizing: border-box;
+  background-color: #22b2da;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.575);
+  transition: all ease-in-out 0.3s;
+}
+
+button:hover {
+  background-color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.restart-button {
+  border-radius: 13px;
+  padding: 10px;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  box-shadow: 0 5px rgb(159, 159, 159);
+}
+
+.restart-button:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+.counter-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  font-size: 7.5rem;
+  margin: 20px 0;
+}
+
+.number-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.number-button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+}
+
+.material-symbols-outlined {
+  position: fixed;
+  padding: 10px;
+  bottom: 20px;
+  right: 20px;
+  font-size: 3.125rem;
+  cursor: pointer;
+}
+
+@media (max-height: 650px) {
+  .title {
+    display: none;
+  }
+
+  .restart-button {
+    margin: 20px 0;
+  }
+
+  .counter-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .number {
+    font-size: 10.625rem;
+  }
+}
