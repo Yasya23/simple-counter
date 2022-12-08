@@ -117,6 +117,10 @@ button:hover {
 
 @media (max-height: 650px) and (max-width: 500px) {
   .counter-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-column-gap: 40px;
